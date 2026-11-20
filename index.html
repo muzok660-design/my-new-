@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d1b">
+<meta name="description" content="Muzaffar Ali Graphic Academy — گرافک ڈیزائننگ، فوٹو ایڈیٹنگ، برانڈنگ اور ڈیجیٹل کریئیٹو اسکلز۔">
+<title>Muzaffar Ali Graphic Academy | Creative Studio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
+:root{
+ --bg:#080d1b;--bg2:#0c1427;--panel:#111d34;--panel2:#162541;--gold:#e8b85b;
+ --gold2:#f7d993;--cyan:#65e5d2;--text:#f6f7fb;--muted:#aab6ca;--line:#263754;
+ --shadow:0 24px 70px #0006;--radius:22px;--max:1180px
+}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:"DM Sans","Noto Nastaliq Urdu",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 85% 10%,#1b3456 0,transparent 28%),radial-gradient(circle at 8% 55%,#173a3c55 0,transparent 28%)}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.container{width:min(var(--max),92%);margin:auto}
+.urdu{font-family:"Noto Nastaliq Urdu",Tahoma,sans-serif}
+.topline{height:3px;background:linear-gradient(90deg,var(--cyan),var(--gold),#bd8cff)}
+header{position:sticky;top:0;z-index:100;background:#080d1beF;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;direction:ltr}
+.brand-mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold2),#b77b29);color:#10182a;font-weight:900;font-size:20px;box-shadow:0 8px 25px #e8b85b30}
+.brand-name{font-weight:900;letter-spacing:.3px;font-size:15px;line-height:1.25}
+.brand-name small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;font-weight:700;margin-top:4px}
+nav{display:flex;align-items:center;gap:20px}
+nav a{font-size:13px;color:var(--muted);transition:.2s}
+nav a:hover,nav a.active{color:var(--gold2)}
+.nav-actions{display:flex;gap:9px;align-items:center}
+.menu-btn{display:none;border:1px solid var(--line);background:var(--panel);color:white;border-radius:12px;padding:8px 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:13px;padding:11px 18px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#171b28;font-weight:900;font-size:13px;transition:.25s;box-shadow:0 10px 28px #e8b85b20}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px #e8b85b35}
+.btn.ghost{background:transparent;border-color:#d8b66b66;color:var(--gold2);box-shadow:none}
+.btn.soft{background:#ffffff0c;color:var(--text);border-color:#ffffff16;box-shadow:none}
+.hero{padding:90px 0 70px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #e8b85b22;border-radius:50%;left:-190px;top:20px;box-shadow:0 0 0 45px #e8b85b08,0 0 0 90px #e8b85b05}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px;position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1px;background:#65e5d211;border:1px solid #65e5d233;border-radius:30px;padding:7px 13px}
+.hero h1{font-size:clamp(35px,5.3vw,66px);line-height:1.2;margin:22px 0 17px;letter-spacing:-1.8px}
+.hero h1 span{background:linear-gradient(100deg,var(--gold2),var(--gold),#f3e5bd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:600px;font-size:15px;line-height:2}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:34px;color:var(--muted);font-size:12px}
+.hero-meta b{color:var(--text);display:block;font-size:17px}
+.visual-wrap{min-height:440px;position:relative;display:grid;place-items:center}
+.visual-glow{position:absolute;width:310px;height:310px;background:#d7a94c20;filter:blur(70px);border-radius:50%}
+.design-board{width:min(440px,100%);aspect-ratio:1.03;border:1px solid #ffffff25;border-radius:30px;padding:19px;background:linear-gradient(145deg,#192b48dd,#0c1427ee);box-shadow:var(--shadow);transform:rotate(2deg);position:relative}
+.board-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:10px;letter-spacing:2px}
+.board-dots{display:flex;gap:5px}.board-dots i{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.poster{height:78%;margin-top:16px;border-radius:20px;overflow:hidden;position:relative;padding:25px;display:flex;flex-direction:column;justify-content:space-between;color:#101522;background:radial-gradient(circle at 75% 22%,#fff8 0 2%,transparent 3%),linear-gradient(135deg,#f6d27d,#d98a50 48%,#7148a9)}
+.poster:before{content:"";position:absolute;width:230px;height:230px;border:1px solid #ffffff77;border-radius:50%;left:-55px;bottom:-90px;box-shadow:0 0 0 25px #ffffff19,0 0 0 50px #ffffff12}
+.poster-label{font-size:10px;letter-spacing:3px;font-weight:900;position:relative}
+.poster-title{font-size:clamp(37px,5vw,58px);line-height:.95;font-weight:900;letter-spacing:-3px;position:relative}
+.poster-foot{display:flex;justify-content:space-between;align-items:end;font-size:9px;font-weight:900;letter-spacing:2px;position:relative}
+.float-chip{position:absolute;background:#101c31;border:1px solid #ffffff22;border-radius:15px;padding:12px 16px;box-shadow:var(--shadow);font-size:12px;color:var(--muted)}
+.float-chip b{color:var(--gold2);display:block;font-size:15px}.chip-one{top:54px;right:-16px}.chip-two{bottom:55px;left:-20px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:0 auto 25px}
+.stat{padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#14233c,#0e192c);text-align:center}
+.stat strong{display:block;color:var(--gold2);font-size:27px;line-height:1.2}.stat span{color:var(--muted);font-size:12px}
+section{padding:82px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.eyebrow{color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.section-head h2{font-size:clamp(27px,4vw,42px);line-height:1.3;margin:8px 0 10px}
+.section-head h2 em{font-style:normal;color:var(--gold2)}
+.section-head p{color:var(--muted);font-size:14px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-copy h3{font-size:27px;margin:10px 0}.about-copy p{color:var(--muted);font-size:14px}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:22px}
+.feature{padding:12px 14px;border-radius:13px;background:#ffffff08;border:1px solid #ffffff12;font-size:12px;color:#d7dfeb}
+.feature span{color:var(--cyan);margin-left:6px}
+.about-panel{padding:30px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,#172946,#0e182b);box-shadow:var(--shadow)}
+.about-panel .big-icon{font-size:48px}.about-panel h3{color:var(--gold2);font-size:22px;margin:8px 0}.about-panel p{color:var(--muted);font-size:13px}
+.mini-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.mini-tags span{border:1px solid #ffffff1b;background:#ffffff09;border-radius:30px;padding:6px 10px;font-size:10px;color:#d5deeb}
+.alt{background:linear-gradient(180deg,#0c1427,#0a1120)}
+.search-row{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:22px;flex-wrap:wrap}
+.searchbox{position:relative;flex:1;max-width:390px}.searchbox input{padding-right:42px}
+.searchbox span{position:absolute;right:14px;top:8px;color:var(--muted)}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#091426;color:var(--text);outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px #e8b85b15}
+textarea{min-height:110px;resize:vertical}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter{border:1px solid var(--line);background:#ffffff08;color:var(--muted);padding:8px 13px;border-radius:30px;font-size:11px}
+.filter.active,.filter:hover{background:var(--gold);color:#151a27;border-color:var(--gold);font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{border:1px solid var(--line);border-radius:19px;padding:21px;background:linear-gradient(145deg,#14223a,#0f192c);transition:.25s;min-width:0}
+.card:hover{transform:translateY(-5px);border-color:#d9b35c88;box-shadow:0 15px 40px #0003}
+.iconbox{width:47px;height:47px;display:grid;place-items:center;border-radius:14px;background:#e8b85b16;border:1px solid #e8b85b33;font-size:23px;margin-bottom:13px}
+.card h3{font-size:16px;margin-bottom:6px}.card p{font-size:12px;color:var(--muted);line-height:1.9}
+.course-card{position:relative;overflow:hidden}.course-card:after{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:#e8b85b0c;left:-50px;top:-50px}
+.course-level{display:inline-block;color:var(--cyan);font-size:10px;font-weight:800;margin-top:12px}
+.course-card .btn{margin-top:17px}
+.gallery-tools{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.artwork{min-height:220px;border-radius:19px;overflow:hidden;position:relative;display:flex;align-items:end;padding:18px;isolation:isolate;border:1px solid #ffffff18}
+.artwork:before{content:"";position:absolute;inset:0;z-index:-1;transition:.35s}
+.artwork:hover:before{transform:scale(1.08)}
+.artwork:nth-child(1):before{background:radial-gradient(circle at 75% 20%,#fff8 0 2%,transparent 3%),linear-gradient(135deg,#f5d27a,#d87e54 55%,#5d4ba5)}
+.artwork:nth-child(2):before{background:radial-gradient(circle at 30% 35%,#ffffff55 0 10%,transparent 11%),linear-gradient(135deg,#75e0d1,#1c6580 65%,#17294b)}
+.artwork:nth-child(3):before{background:radial-gradient(circle at 70% 30%,#fff8 0 4%,transparent 5%),linear-gradient(135deg,#f5a6bd,#8554b9 60%,#25204c)}
+.artwork:nth-child(4):before{background:repeating-linear-gradient(135deg,#ffffff12 0 2px,transparent 2px 12px),linear-gradient(135deg,#f2d77d,#e17c51)}
+.artwork:nth-child(5):before{background:radial-gradient(circle at 50% 40%,#f9e7a9 0 12%,transparent 13%),linear-gradient(135deg,#245c70,#12243f)}
+.artwork:nth-child(6):before{background:radial-gradient(circle at 80% 20%,#ffffff66 0 3%,transparent 4%),linear-gradient(135deg,#d7a0c9,#7653a7 60%,#24355a)}
+.artwork strong{font-size:19px;line-height:1.2;color:#fff;text-shadow:0 2px 12px #0009;letter-spacing:1px}
+.artwork small{display:block;font-size:9px;letter-spacing:2px;margin-top:7px;color:#fff}
+.gallery-note{text-align:center;color:var(--muted);font-size:11px;margin-top:16px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:steps}
+.process{padding:19px;border:1px solid var(--line);border-radius:17px;background:#ffffff06;counter-increment:steps}
+.process:before{content:"0" counter(steps);color:var(--gold2);font-size:25px;font-weight:900}.process h3{font-size:14px;margin:7px 0}.process p{font-size:11px;color:var(--muted)}
+.form-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:start}
+.form-info{padding:26px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#172946,#0d1729)}
+.form-info h3{font-size:23px;color:var(--gold2);margin:8px 0}.form-info p{font-size:13px;color:var(--muted)}
+.notice{padding:12px 14px;border-radius:12px;background:#e8b85b12;border:1px solid #e8b85b33;color:#e9d8b0;font-size:11px;margin-top:18px}
+.form{padding:25px;border:1px solid var(--line);border-radius:22px;background:#111d34}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+label{font-size:11px;color:var(--muted)}
+.form button{width:100%;margin-top:5px}
+.faq{max-width:850px;margin:auto}
+details{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:#111d34;margin:10px 0}
+summary{cursor:pointer;color:var(--gold2);font-weight:800;font-size:13px}
+details p{color:var(--muted);font-size:12px;padding-top:10px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contact-card{padding:25px;border:1px solid var(--line);border-radius:20px;background:#111d34}
+.contact-item{display:flex;gap:13px;align-items:center;padding:13px 0;border-bottom:1px solid #ffffff12}
+.contact-item:last-child{border:0}.contact-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#e8b85b16;font-size:18px}
+.contact-item small{display:block;color:var(--muted);font-size:10px}.contact-item b{font-size:13px}
+footer{padding:35px 0;background:#050914;border-top:1px solid var(--line);color:var(--muted)}
+.footer-row{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+.footer-brand{color:var(--gold2);font-weight:900;direction:ltr;text-align:right}.footer-brand small{display:block;color:var(--muted);font-size:10px;font-weight:500}
+.toast{position:fixed;bottom:20px;right:20px;z-index:300;background:#142e32;border:1px solid var(--cyan);color:white;padding:12px 17px;border-radius:12px;box-shadow:var(--shadow);display:none;font-size:12px;max-width:min(90vw,400px)}
+.to-top{position:fixed;left:18px;bottom:18px;width:45px;height:45px;border:1px solid #ffffff22;border-radius:14px;background:var(--gold);color:#111827;font-size:20px;display:none;z-index:90}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:90;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#1fbf72;color:white;font-size:25px;box-shadow:0 10px 30px #0006;border:2px solid #ffffff55}
+.empty-state{grid-column:1/-1;text-align:center;padding:25px;color:var(--muted);border:1px dashed var(--line);border-radius:15px}
+.reveal{opacity:0;transform:translateY(18px);transition:.65s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:920px){nav{gap:12px}nav a{font-size:11px}.hero-grid{gap:25px}.grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+ .nav{min-height:70px}.menu-btn{display:block}nav{display:none;position:absolute;top:70px;right:0;left:0;background:#0a1222;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}
+ nav.show{display:flex}nav a{padding:11px 4px;border-bottom:1px solid #ffffff10;font-size:13px}.nav-actions>.btn{display:none}
+ .hero{padding:60px 0 45px}.hero-grid,.about-grid,.form-layout,.contact-grid{grid-template-columns:1fr}.visual-wrap{min-height:360px}.design-board{width:min(390px,90%)}.hero h1{font-size:43px}
+ .stats{grid-template-columns:repeat(2,1fr)}section{padding:62px 0}
+}
+@media(max-width:540px){
+ .brand-name{font-size:12px}.brand-mark{width:39px;height:39px}.hero h1{font-size:37px}.hero p{font-size:13px}
+ .grid,.gallery{grid-template-columns:1fr 1fr;gap:10px}.card{padding:15px}.card h3{font-size:13px}.card p{font-size:10px}
+ .artwork{min-height:155px;padding:12px}.artwork strong{font-size:14px}.form-grid,.feature-list{grid-template-columns:1fr}.field.full{grid-column:auto}
+ .process-grid{grid-template-columns:1fr 1fr}.process{padding:14px}.search-row{align-items:stretch}.searchbox{max-width:none}
+ .float-chip{font-size:10px;padding:9px 11px}.chip-one{right:-3px}.chip-two{left:-3px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#home" aria-label="Muzaffar Ali Graphic Academy home">
+   <span class="brand-mark">MA</span><span class="brand-name">MUZAFFAR ALI<small>GRAPHIC ACADEMY</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="مینو کھولیں" aria-expanded="false">☰</button>
+  <nav id="nav">
+   <a href="#home">ہوم</a><a href="#about">تعارف</a><a href="#services">سروسز</a><a href="#courses">کورسز</a><a href="#gallery">پورٹ فولیو</a><a href="#admission">داخلہ</a><a href="#contact">رابطہ</a>
+  </nav>
+  <div class="nav-actions"><a class="btn" href="#admission">داخلہ معلومات <span>↗</span></a></div>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="reveal">
+   <span class="kicker">✦ CREATIVE DESIGN • DIGITAL SKILLS</span>
+   <h1 class="urdu">اپنی سوچ کو <span>شاندار ڈیزائن</span> میں بدلیں</h1>
+   <p class="urdu">Muzaffar Ali Graphic Academy میں گرافک ڈیزائننگ، فوٹو ایڈیٹنگ، لوگو ڈیزائن، سوشل میڈیا کریئیٹو اور ڈیجیٹل مہارتیں سیکھیں۔ آئیڈیا سے لے کر مکمل ڈیزائن تک، ہر قدم پر اپنی صلاحیت بہتر بنائیں۔</p>
+   <div class="hero-buttons"><a class="btn" href="#courses">کورسز دیکھیں <span>←</span></a><a class="btn ghost" href="#gallery">پورٹ فولیو دیکھیں</a></div>
+   <div class="hero-meta"><div><b>20+</b> تخلیقی سروسز</div><div><b>03</b> سیکھنے کے کورسز</div><div><b>100%</b> پریکٹس پر توجہ</div></div>
+  </div>
+  <div class="visual-wrap reveal">
+   <div class="visual-glow"></div>
+   <div class="design-board">
+    <div class="board-top"><span>MUZAFFAR / CREATIVE STUDIO</span><span class="board-dots"><i></i><i></i><i></i></span></div>
+    <div class="poster"><div class="poster-label">THE ART OF CREATIVITY</div><div class="poster-title">MAKE<br>IT<br>ICONIC.</div><div class="poster-foot"><span>DESIGN • CREATE • INSPIRE</span><span>MA / 01</span></div></div>
+   </div>
+   <div class="float-chip chip-one">✦ Creative Studio<b>Design your future</b></div>
+   <div class="float-chip chip-two">✎ Digital Skills<b>Learn by practice</b></div>
+  </div>
+ </div>
+</section>
+
+<div class="container stats reveal">
+ <div class="stat"><strong>22+</strong><span>ڈیزائننگ سروسز</span></div>
+ <div class="stat"><strong>03</strong><span>بنیادی کورسز</span></div>
+ <div class="stat"><strong>06</strong><span>پورٹ فولیو نمونے</span></div>
+ <div class="stat"><strong>24/7</strong><span>ویب سائٹ تک رسائی</span></div>
+</div>
+
+<section id="about">
+ <div class="container about-grid">
+  <div class="about-copy reveal">
+   <span class="eyebrow">ABOUT THE ACADEMY</span>
+   <h3 class="urdu">سیکھیں، تخلیق کریں، اپنی پہچان بنائیں</h3>
+   <p class="urdu">یہ اکیڈمی ڈیزائننگ سیکھنے والوں کے لیے ایک تعلیمی پلیٹ فارم ہے۔ یہاں آپ بنیادی اصولوں سے آغاز کرکے عملی پراجیکٹس کے ذریعے اپنا پورٹ فولیو تیار کرنے کی مشق کر سکتے ہیں۔</p>
+   <div class="feature-list">
+    <div class="feature"><span>✦</span> آسان انداز میں رہنمائی</div><div class="feature"><span>✦</span> عملی پراجیکٹس</div>
+    <div class="feature"><span>✦</span> پورٹ فولیو بنانے کی مشق</div><div class="feature"><span>✦</span> موبائل فرینڈلی ڈیزائن</div>
+   </div>
+  </div>
+  <div class="about-panel reveal"><div class="big-icon">🎨 🖥️ 📸</div><h3>DESIGN • EDIT • CREATE</h3><p class="urdu">ہر نیا ڈیزائن ایک نیا موقع ہے۔ رنگوں، فونٹس، کمپوزیشن اور تخلیقی سوچ کو سمجھیں اور اپنی مہارت کو بہتر بنائیں۔</p><div class="mini-tags"><span>Graphic Design</span><span>Photo Editing</span><span>Branding</span><span>Social Media</span><span>Creative Skills</span></div></div>
+ </div>
+</section>
+
+<section class="alt" id="services">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow">WHAT WE DO</span><h2 class="urdu">ہماری <em>20+</em> تخلیقی سروسز</h2><p class="urdu">اپنی ضرورت کی سروس تلاش کریں اور اس کے بارے میں مزید جانیں۔</p></div>
+  <div class="search-row reveal">
+   <div class="searchbox"><span>⌕</span><input id="serviceSearch" type="search" placeholder="سروس تلاش کریں..."></div>
+   <div class="filters" id="serviceFilters"><button class="filter active" data-filter="all">تمام سروسز</button><button class="filter" data-filter="design">ڈیزائن</button><button class="filter" data-filter="photo">فوٹو</button><button class="filter" data-filter="digital">ڈیجیٹل</button></div>
+  </div>
+  <div class="grid" id="serviceGrid">
+   <article class="card service" data-cat="photo"><div class="iconbox">🖼️</div><h3>فوٹو ایڈیٹنگ</h3><p>تصاویر کی بنیادی اور تخلیقی ایڈیٹنگ۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">✒️</div><h3>لوگو ڈیزائن</h3><p>برانڈ کے لیے منفرد لوگو آئیڈیاز۔</p></article>
+   <article class="card service" data-cat="digital"><div class="iconbox">📱</div><h3>سوشل میڈیا پوسٹس</h3><p>فیس بک، انسٹاگرام اور دیگر پوسٹس۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🎬</div><h3>ویڈیو تھمب نیل</h3><p>یوٹیوب اور ویڈیو کور ڈیزائن۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">💳</div><h3>وزٹنگ کارڈ</h3><p>پروفیشنل بزنس کارڈ لے آؤٹ۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">📢</div><h3>بینر اور پوسٹر</h3><p>تقریبات اور تشہیر کے لیے ڈیزائن۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">📰</div><h3>فلائر ڈیزائن</h3><p>اشتہاری فلائر اور بروشر۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">📚</div><h3>کتابوں کے کور</h3><p>کتاب اور نوٹ بک کور ڈیزائن۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🪪</div><h3>آئی ڈی کارڈ</h3><p>سادہ شناختی کارڈ لے آؤٹ۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🖌️</div><h3>کلر کمبینیشن</h3><p>رنگوں کا درست انتخاب سیکھیں۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🔤</div><h3>اردو ٹائپوگرافی</h3><p>اردو فونٹس اور خوبصورت تحریر۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🔠</div><h3>انگلش ٹائپوگرافی</h3><p>فونٹس، اسپیسنگ اور ہیڈنگز۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🧩</div><h3>بزنس برانڈنگ</h3><p>برانڈ کی بصری شناخت کے آئیڈیاز۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🧑‍🎨</div><h3>کارٹون کریکٹر</h3><p>کریکٹر ڈیزائن کے بنیادی تصورات۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">🌄</div><h3>بیک گراؤنڈ ڈیزائن</h3><p>تخلیقی بیک گراؤنڈ اور کمپوزیشن۔</p></article>
+   <article class="card service" data-cat="photo"><div class="iconbox">🪄</div><h3>فوٹو ری ٹچنگ</h3><p>تصویر کی صفائی اور بہتری کی مشق۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">📐</div><h3>لے آؤٹ ڈیزائن</h3><p>متن اور تصاویر کی ترتیب۔</p></article>
+   <article class="card service" data-cat="digital"><div class="iconbox">🖥️</div><h3>پورٹ فولیو ڈیزائن</h3><p>اپنے بہترین کام کی نمائش۔</p></article>
+   <article class="card service" data-cat="design"><div class="iconbox">📄</div><h3>سرٹیفکیٹ ڈیزائن</h3><p>تعلیمی اور ایونٹ سرٹیفکیٹس۔</p></article>
+   <article class="card service" data-cat="digital"><div class="iconbox">💡</div><h3>کریئیٹو آئیڈیاز</h3><p>نئے ڈیزائن آئیڈیاز پر مشق۔</p></article>
+   <article class="card service" data-cat="digital"><div class="iconbox">🧰</div><h3>ڈیزائن ٹولز کا تعارف</h3><p>مختلف ڈیزائن ایپس کا بنیادی استعمال۔</p></article>
+   <article class="card service" data-cat="digital"><div class="iconbox">📦</div><h3>فائل ایکسپورٹ</h3><p>PNG، JPG اور PDF فارمیٹس کا تعارف۔</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="courses">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow">LEARN WITH US</span><h2 class="urdu">اپنی مہارت کا <em>آغاز کریں</em></h2><p class="urdu">اپنی دلچسپی کے مطابق کورس منتخب کریں۔</p></div>
+  <div class="grid">
+   <article class="card course-card reveal"><div class="iconbox">🌱</div><h3>بیسک گرافک ڈیزائننگ</h3><p>ڈیزائن اصول، رنگ، فونٹس، اسپیسنگ اور لے آؤٹ کی بنیادی سمجھ۔</p><span class="course-level">ابتدائی سطح</span><a class="btn course-select" data-course="بیسک گرافک ڈیزائننگ" href="#admission">داخلہ معلومات ←</a></article>
+   <article class="card course-card reveal"><div class="iconbox">📷</div><h3>فوٹو ایڈیٹنگ</h3><p>کراپنگ، لائٹنگ، کلر ایڈجسٹمنٹ، ری ٹچنگ اور کمپوزیشن کی مشق۔</p><span class="course-level">ابتدائی تا درمیانی</span><a class="btn course-select" data-course="فوٹو ایڈیٹنگ" href="#admission">داخلہ معلومات ←</a></article>
+   <article class="card course-card reveal"><div class="iconbox">🚀</div><h3>سوشل میڈیا ڈیزائن</h3><p>سوشل میڈیا پوسٹس، بینرز، اشتہارات اور تھمب نیلز بنانا سیکھیں۔</p><span class="course-level">پراجیکٹ بیسڈ</span><a class="btn course-select" data-course="سوشل میڈیا ڈیزائن" href="#admission">داخلہ معلومات ←</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="gallery">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow">SELECTED CONCEPTS</span><h2 class="urdu">تخلیقی <em>پورٹ فولیو</em></h2><p class="urdu">یہ ڈیمو ڈیزائن تصورات ہیں۔ اپنی اصل تصاویر سے تبدیل کریں۔</p></div>
+  <div class="gallery-tools" id="galleryFilters"><button class="filter active" data-gallery="all">تمام</button><button class="filter" data-gallery="brand">برانڈنگ</button><button class="filter" data-gallery="social">سوشل میڈیا</button><button class="filter" data-gallery="photo">فوٹو</button></div>
+  <div class="gallery" id="galleryGrid">
+   <div class="artwork" data-cat="brand"><strong>BRAND<br>IDENTITY<small>LOGO & VISUAL SYSTEM</small></strong></div>
+   <div class="artwork" data-cat="social"><strong>SOCIAL<br>MEDIA POST<small>CREATIVE CONTENT</small></strong></div>
+   <div class="artwork" data-cat="photo"><strong>PHOTO<br>ART<small>COLOR & LIGHT</small></strong></div>
+   <div class="artwork" data-cat="brand"><strong>CREATIVE<br>POSTER<small>VISUAL STORYTELLING</small></strong></div>
+   <div class="artwork" data-cat="social"><strong>VIDEO<br>THUMBNAIL<small>VIDEO COVER DESIGN</small></strong></div>
+   <div class="artwork" data-cat="photo"><strong>COLOR<br>STUDY<small>PHOTO COMPOSITION</small></strong></div>
+  </div>
+  <p class="gallery-note">نوٹ: گیلری میں موجود گرافکس صرف ڈیزائن پری ویو ہیں، اصل کلائنٹ ورک نہیں۔</p>
+ </div>
+</section>
+
+<section id="process">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow">SIMPLE PROCESS</span><h2 class="urdu">سیکھنے کا <em>آسان طریقہ</em></h2><p class="urdu">اپنے تخلیقی سفر کے لیے ان مراحل سے آغاز کریں۔</p></div>
+  <div class="process-grid">
+   <div class="process"><h3>کورس منتخب کریں</h3><p>اپنی دلچسپی اور موجودہ سطح کے مطابق کورس چنیں۔</p></div>
+   <div class="process"><h3>بنیادی اصول سیکھیں</h3><p>رنگ، فونٹ، لے آؤٹ اور ڈیزائن کے اصول سمجھیں۔</p></div>
+   <div class="process"><h3>پریکٹس کریں</h3><p>چھوٹے پراجیکٹس بنائیں اور اپنی غلطیوں سے سیکھیں۔</p></div>
+   <div class="process"><h3>پورٹ فولیو بنائیں</h3><p>اپنے بہترین کام کو ترتیب دے کر نمائش کے لیے تیار کریں۔</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="admission">
+ <div class="container form-layout">
+  <div class="form-info reveal"><span class="eyebrow">START LEARNING</span><h3 class="urdu">آن لائن داخلہ درخواست</h3><p class="urdu">اپنی بنیادی معلومات درج کریں۔ درخواست تیار ہونے کے بعد اسے براہِ راست اکیڈمی کے WhatsApp نمبر پر بھیج سکتے ہیں۔</p><div class="notice urdu">فارم جمع کرنے پر WhatsApp کھلے گا۔ Send دبانے کے بعد آپ کی درخواست اکیڈمی کو موصول ہوگی۔</div></div>
+  <form class="form reveal" id="admissionForm">
+   <div class="form-grid">
+    <div class="field"><label for="student">طالب علم کا نام *</label><input id="student" required maxlength="80" placeholder="اپنا نام لکھیں"></div>
+    <div class="field"><label for="phone">رابطہ نمبر *</label><input id="phone" required inputmode="tel" maxlength="25" placeholder="03XXXXXXXXX"></div>
+    <div class="field"><label for="course">منتخب کورس *</label><select id="course" required><option value="">کورس منتخب کریں</option><option>بیسک گرافک ڈیزائننگ</option><option>فوٹو ایڈیٹنگ</option><option>سوشل میڈیا ڈیزائن</option></select></div>
+    <div class="field"><label for="city">شہر</label><input id="city" maxlength="60" placeholder="اپنا شہر"></div>
+    <div class="field full"><label for="message">آپ کیا سیکھنا چاہتے ہیں؟</label><textarea id="message" maxlength="500" placeholder="اپنا پیغام لکھیں"></textarea></div>
+    <div class="field full"><button class="btn" type="submit">درخواست تیار کریں ↗</button></div>
+   </div>
+  </form>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="container">
+  <div class="section-head reveal"><span class="eyebrow">HELP CENTER</span><h2 class="urdu">اکثر پوچھے گئے <em>سوالات</em></h2></div>
+  <div class="faq reveal">
+   <details><summary>کیا نئے سیکھنے والے داخلہ لے سکتے ہیں؟</summary><p class="urdu">جی ہاں، بنیادی کورسز نئے سیکھنے والوں کے لیے ترتیب دیے گئے ہیں۔</p></details>
+   <details><summary>کیا موبائل پر ڈیزائننگ سیکھی جا سکتی ہے؟</summary><p class="urdu">جی ہاں، بہت سے بنیادی ڈیزائننگ کام موبائل ایپس کے ذریعے بھی سیکھے جا سکتے ہیں۔</p></details>
+   <details><summary>کیا داخلہ فارم آن لائن محفوظ ہوتا ہے؟</summary><p class="urdu">نہیں، یہ ڈیمو ویب سائٹ ہے۔ فارم WhatsApp پیغام تیار کرتا ہے یا ٹیکسٹ فائل ڈاؤن لوڈ کرتا ہے۔ مستقل آن لائن ریکارڈ کے لیے بیک اینڈ درکار ہوگا۔</p></details>
+   <details><summary>کیا میں گیلری میں اپنے ڈیزائن شامل کر سکتا ہوں؟</summary><p class="urdu">جی ہاں، HTML میں گیلری کے ڈیمو کارڈز کو اپنی اصل تصاویر اور ڈیزائن سے تبدیل کیا جا سکتا ہے۔</p></details>
+   <details><summary>کیا کورس کی فیس ویب سائٹ پر درج ہے؟</summary><p class="urdu">فی الحال فیس درج نہیں۔ تازہ معلومات کے لیے اکیڈمی سے رابطہ کریں۔</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="alt" id="contact">
+ <div class="container contact-grid">
+  <div class="reveal"><span class="eyebrow">GET IN TOUCH</span><h2 class="urdu" style="font-size:32px;margin:10px 0">آئیے <em style="color:var(--gold2);font-style:normal">بات کرتے ہیں</em></h2><p class="urdu" style="color:var(--muted);font-size:13px">کورسز، ڈیزائننگ یا داخلے سے متعلق سوالات کے لیے پیغام بھیجیں۔</p>
+   <div class="contact-card" style="margin-top:20px">
+    <div class="contact-item"><span class="contact-icon">📍</span><div><small>LOCATION</small><b>آن لائن سروس — پاکستان</b></div></div>
+    <div class="contact-item"><span class="contact-icon">📞</span><div><small>PHONE / WHATSAPP</small><b><a href="https://wa.me/923351283355" target="_blank" rel="noopener" style="color:var(--gold2)">0335 1283355</a></b></div></div>
+    <div class="contact-item"><span class="contact-icon">✉️</span><div><small>CONTACT</small><b>رابطے کے لیے WhatsApp استعمال کریں</b></div></div>
+   </div>
+  </div>
+  <form class="contact-card form reveal" id="contactForm">
+   <h3 style="margin-bottom:14px">ڈیزائن آرڈر / پیغام بھیجیں</h3>
+   <div class="form-grid">
+    <div class="field full"><label for="cname">آپ کا نام *</label><input id="cname" required maxlength="80"></div>
+    <div class="field full"><label for="cemail">آپ کا فون یا WhatsApp نمبر *</label><input id="cemail" required maxlength="100" inputmode="tel" placeholder="03XXXXXXXXX"></div>
+    <div class="field full"><label for="orderType">آپ کو کون سا ڈیزائن چاہیے؟</label><select id="orderType"><option>لوگو ڈیزائن</option><option>YouTube Thumbnail</option><option>سوشل میڈیا پوسٹ</option><option>بینر / پوسٹر</option><option>وزٹنگ کارڈ</option><option>فوٹو ایڈیٹنگ</option><option>دیگر</option></select></div>
+    <div class="field full"><label for="cmsg">آرڈر کی تفصیل / پیغام *</label><textarea id="cmsg" required maxlength="1000"></textarea></div>
+    <div class="field full"><button class="btn" type="submit">پیغام تیار کریں ↗</button></div>
+   </div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-row">
+  <div class="footer-brand">MUZAFFAR ALI GRAPHIC ACADEMY<small>Creative Learning • Design • Editing</small></div>
+  <div>© <span id="year"></span> تمام حقوق محفوظ ہیں۔</div>
+  <a href="#home">اوپر جائیں ↑</a>
+ </div>
+</footer>
+<a class="whatsapp" id="whatsappBtn" href="#" target="_blank" rel="noopener" aria-label="WhatsApp رابطہ">☏</a>
+<button class="to-top" id="topBtn" aria-label="اوپر جائیں">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* اپنی معلومات یہاں درج کریں:
+   WhatsApp نمبر international format میں digits کے ساتھ لکھیں، + یا spaces کے بغیر۔
+   مثال: پاکستان کے نمبر کے لیے 923001234567 (یہ صرف مثال ہے، اپنا اصل نمبر لگائیں)۔
+*/
+const ACADEMY_WHATSAPP = "923351283355"; // Muzaffar Ali Graphic Academy WhatsApp
+const ACADEMY_EMAIL = "";    // اختیاری: اپنی ای میل یہاں درج کریں
+
+const $ = (selector, root=document) => root.querySelector(selector);
+const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
+const toast = (message) => {
+  const el = $("#toast"); el.textContent = message; el.style.display = "block";
+  clearTimeout(toast.timer); toast.timer = setTimeout(()=>el.style.display="none", 3500);
+};
+
+// Mobile navigation
+const nav = $("#nav"), menuBtn = $("#menuBtn");
+menuBtn.addEventListener("click",()=>{
+  const opened = nav.classList.toggle("show");
+  menuBtn.setAttribute("aria-expanded", String(opened));
+  menuBtn.textContent = opened ? "✕" : "☰";
+});
+$$("nav a").forEach(link=>link.addEventListener("click",()=>{
+  nav.classList.remove("show"); menuBtn.setAttribute("aria-expanded","false"); menuBtn.textContent="☰";
+}));
+
+// Current year and back-to-top button
+$("#year").textContent = new Date().getFullYear();
+const topBtn = $("#topBtn");
+window.addEventListener("scroll",()=>{
+  topBtn.style.display = window.scrollY > 450 ? "block" : "none";
+},{passive:true});
+topBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+// Reveal elements when they enter the screen
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
+    });
+  },{threshold:.12});
+  $$(".reveal").forEach(el=>observer.observe(el));
+} else $$(".reveal").forEach(el=>el.classList.add("visible"));
+
+// Service search + category filter
+let activeServiceFilter = "all";
+const serviceSearch = $("#serviceSearch");
+function filterServices(){
+  const query = serviceSearch.value.trim().toLocaleLowerCase();
+  let visible = 0;
+  $$(".service").forEach(card=>{
+    const matchesText = card.textContent.toLocaleLowerCase().includes(query);
+    const matchesCat = activeServiceFilter === "all" || card.dataset.cat === activeServiceFilter;
+    card.hidden = !(matchesText && matchesCat);
+    if(!card.hidden) visible++;
+  });
+  let empty = $("#serviceEmpty");
+  if(!visible){
+    if(!empty){empty=document.createElement("div");empty.id="serviceEmpty";empty.className="empty-state";$("#serviceGrid").append(empty);}
+    empty.textContent="کوئی سروس نہیں ملی۔ دوسرے الفاظ سے تلاش کریں۔";
+  } else if(empty) empty.remove();
+}
+serviceSearch.addEventListener("input",filterServices);
+$("#serviceFilters").addEventListener("click",e=>{
+  const btn=e.target.closest("[data-filter]"); if(!btn)return;
+  $$("#serviceFilters .filter").forEach(b=>b.classList.toggle("active",b===btn));
+  activeServiceFilter=btn.dataset.filter;filterServices();
+});
+
+// Portfolio category filter
+$("#galleryFilters").addEventListener("click",e=>{
+  const btn=e.target.closest("[data-gallery]");if(!btn)return;
+  $$("#galleryFilters .filter").forEach(b=>b.classList.toggle("active",b===btn));
+  $$("#galleryGrid .artwork").forEach(item=>{
+    item.style.display = btn.dataset.gallery==="all" || item.dataset.cat===btn.dataset.gallery ? "flex" : "none";
+  });
+});
+
+// Course selection fills the admission form
+$$(".course-select").forEach(link=>link.addEventListener("click",()=>{
+  $("#course").value=link.dataset.course;
+}));
+
+function openWhatsApp(message){
+  if(!ACADEMY_WHATSAPP){
+    toast("WhatsApp کھولنے میں مسئلہ ہو تو نمبر 0335 1283355 پر رابطہ کریں۔");
+    return false;
+  }
+  const url="https://wa.me/"+ACADEMY_WHATSAPP+"?text="+encodeURIComponent(message);
+  window.open(url,"_blank","noopener");
+  return true;
+}
+function downloadText(filename, content){
+  const blob=new Blob(["\uFEFF",content],{type:"text/plain;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");a.href=url;a.download=filename;
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function value(id){return $("#"+id).value.trim();}
+
+// Admission form: WhatsApp when configured; otherwise download a text file
+$("#admissionForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const data=[
+    "MUZAFFAR ALI GRAPHIC ACADEMY — ADMISSION REQUEST",
+    "نام: "+value("student"),"فون: "+value("phone"),
+    "کورس: "+value("course"),"شہر: "+value("city"),
+    "پیغام: "+value("message"),"تاریخ: "+new Date().toLocaleString()
+  ].join("\n");
+  if(!openWhatsApp(data)) downloadText("academy-admission-request.txt",data);
+  else toast("WhatsApp پر درخواست مکمل کرکے Send دبائیں۔");
+});
+
+// Contact form: WhatsApp when configured; otherwise download a text file
+$("#contactForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const data=[
+    "ACADEMY CONTACT MESSAGE","نام: "+value("cname"),
+    "رابطہ: "+value("cemail"),"ڈیزائن سروس: "+value("orderType"),"آرڈر کی تفصیل: "+value("cmsg")
+  ].join("\n");
+  if(!openWhatsApp(data)) downloadText("academy-contact-message.txt",data);
+  else toast("WhatsApp پر پیغام مکمل کرکے Send دبائیں۔");
+});
+
+// WhatsApp floating button
+$("#whatsappBtn").addEventListener("click",e=>{
+  if(!ACADEMY_WHATSAPP){
+    e.preventDefault();window.open("https://wa.me/"+ACADEMY_WHATSAPP,"_blank","noopener");return;
+  }
+  e.currentTarget.href="https://wa.me/"+ACADEMY_WHATSAPP;
+});
+
+// Optional email contact: configured value is intentionally not guessed or invented
+if(ACADEMY_EMAIL){
+  const emailLink=document.createElement("a");
+  emailLink.href="mailto:"+ACADEMY_EMAIL;
+  emailLink.textContent=ACADEMY_EMAIL;
+  emailLink.style.color="var(--gold2)";
+  const emailItem=$$(".contact-item")[2];
+  if(emailItem) emailItem.querySelector("b").replaceWith(emailLink);
+}
+</script>
+</body>
+</html>
